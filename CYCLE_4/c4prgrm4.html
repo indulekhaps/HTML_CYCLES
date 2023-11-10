@@ -1,7 +1,27 @@
 <html>
-<body>
+<head>
 <style>
-h2{font-size : 30px;color : red;font-weight : bold;text-decoration : underline;}
+h1{color:green;font-size:40;}
+u{color:green;)
 </style>
+</head>
 <center>
-<h2>CHECK IF POSITIVE OR NEGATIVE</h2>
+<body>
+<u><h1>check whether postive or negative</h1></u>
+<input type="text" id="num">
+<button  onclick="sum1()">check</button>
+<input type="text" id="out">
+<script>
+function sum1()
+{
+let x;
+x=parseInt(document.getElementById('num').value);
+if(x>0)
+document.getElementById("out").value="postive number";
+else
+document.getElementById("out").value="negative number";
+}
+</script>
+</body>
+</center>
+</html>
